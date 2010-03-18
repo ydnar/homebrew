@@ -10,7 +10,7 @@ class Gpgme < Formula
   def install
     ENV.gcc_4_2
     system "./configure", "--prefix=#{prefix}",
-      "--disable-debug", "--disable-dependency-tracking"
+      "--disable-debug", "--disable-dependency-tracking", "--disable-asm"
     system "make install"
   end
 end

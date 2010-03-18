@@ -7,7 +7,7 @@ class LibgpgError <Formula
 
   def install
     ENV.j1
-    system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
+    system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking", "--disable-asm"
     system "make install"
   end
 end
